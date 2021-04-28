@@ -1,0 +1,687 @@
+* {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/*-------------------------------
+
+
+      Fonts
+
+
+--------------------------------*/
+
+@font-face {
+  font-family: 'amster-1';
+  src: url('../fonts/amster-1.ttf');
+}
+
+@font-face {
+  font-family: 'amster-4';
+  src: url('../fonts/amster-4.ttf');
+}
+
+@font-face {
+  font-family: 'mr-dehaviland-reg';
+  src: url('../fonts/mr-dehaviland-reg.ttf');
+}
+
+@font-face {
+  font-family: 'opificio';
+  src: url('../fonts/opificio.ttf');
+}
+
+@font-face {
+  font-family: 'optibank-gothic';
+  src: url('../fonts/optibank-gothic.otf');
+}
+
+
+/*----------------------------------
+
+
+      Universal Styling
+
+
+-----------------------------------*/
+
+body {
+  background: #161717;
+  color: #161717;
+  font: normal 16px/1.5 'mr-eaves-xl-modern', 'opificio', sans-serif;
+}
+
+div {
+  background: #fffffff2 url(../images/celestial-hands-notext-background.png) repeat fixed center;
+  border: 5px solid #a8a096;
+  margin: 0 auto;
+  padding: 10px 20px;
+  position: relative;
+  width: 80%;
+}
+
+.large {
+  width: 80%;
+  object-fit: contain;
+}
+
+.medium {
+  height: 250px;
+  width: auto;
+  object-fit: contain;
+}
+
+.small {
+  height: 50px;
+  object-fit: cover;
+  width: 50px;
+}
+
+.logo {
+  width: 250px;
+}
+
+.align-center {
+  display: block;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+  color: #161717;
+}
+
+/*-- Unvisited Link --*/
+a:link {
+  color: #161717;
+}
+
+/*-- Visisted Link --*/
+a:visited {
+  color: #9783AA;
+  font-weight: bold;
+}
+
+/*-- Mouse Over Link --*/
+a:hover {
+  text-decoration: underline;
+  font-size: 1.3em;
+  transition: .2s;
+}
+
+/*----------------------------------
+
+
+      Header Styling
+
+
+-----------------------------------*/
+
+header {
+  background: #d7bcb7;
+  padding: 15px 25px;
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+}
+
+header img {
+  position: absolute;
+}
+
+nav ul li a{
+  list-style-type: none;
+  padding: 5px 15px;
+  transition: .2s
+}
+
+.main-menu {
+  position: relative;
+  text-align: center;
+  border: none;
+}
+
+.main-menu ul li {
+  display: inline-block;
+  padding: 20px;
+  margin: 10px;
+  text-transform: uppercase;
+}
+
+.top-right-menu {
+  min-width: 200px;
+  position: fixed;
+  right: 10px;
+  top: 15px;
+  border: none;
+}
+
+.top-right-menu ul li {
+  display: inline-block;
+  margin: 10px;
+}
+
+/*----------------------------------
+
+
+      Home Page Styling
+
+
+-----------------------------------*/
+.first {
+  position: relative;
+  top: 130px;
+  width: 100%;
+}
+
+.first article {
+  background: #ffffffc7;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.main {
+  margin: 0 auto;
+  position: relative;
+  top: 145px;
+  width: 84.5%;
+  min-width: 875px;
+}
+
+.no-border {
+  border: none;
+  background: none;
+  width: 100%;
+  height: 780px;
+  padding: 0;
+}
+
+aside {
+  background: #fffffff2 url(../images/celestial-hands-notext-background.png) repeat fixed center;
+  border: 5px solid #a8a096;
+  float: left;
+  height: 750px;
+  padding: 10px;
+  text-align: center;
+  width: 15%;
+}
+
+aside img {
+  padding: 40px 0 5px;
+}
+
+.sidebar .logo {
+  padding: 25px 0;
+  width: 100%;
+}
+
+.sidebar img {
+  display: block;
+  margin: 0 auto;
+}
+
+.sidebar-links {
+  background: #ffffffc7;
+  border-radius: 5px;
+  font-size: 12px;
+  padding: 5px;
+}
+
+.sip-shop {
+  font: normal 16px/1.5 'mr-dehaviland-reg', 'opificio', serif;
+}
+
+.boutique {
+  font: normal 14px/1.5 'montserrat', sans-serif;
+}
+
+.rf {
+  font: normal 14px/1.5 'optibank-gothic', sans-serif;
+}
+
+.colorstreet {
+  font: normal 14px/1.5 'opificio', sans-serif;
+}
+
+.robin-nest {
+  font: normal 14px/1.5 'amster-4', cursive;
+}
+
+.business-overview {
+  float: right;
+  height: 750px;
+  overflow: scroll;
+  width: 75%;
+}
+
+.overview {
+  background: #ffffffc7;
+  border-radius: 5px;
+  font-size: 12px;
+  padding: 5px;
+}
+
+.overview .small {
+  float: left;
+  padding: 10px 15px;
+}
+
+.overview p {
+  padding: 10px;
+}
+
+.kaz {
+  padding-left: 115px;
+}
+
+.testamonials {
+  top: 160px;
+  position: relative;
+  clear: both;
+}
+
+.testamonials img {
+  display: block;
+  margin: 0 auto;
+}
+
+.testamonials div {
+  clear: both;
+}
+
+.testamonial-2 {
+  margin: 15px auto;
+}
+
+.description,
+.quote {
+  border: none;
+  background: #ffffffc7;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.container {
+  background: #fffffff2 url(../images/celestial-hands-notext-background.png) repeat fixed center;
+  border: 5px solid #a8a096;
+  margin: 0 auto;
+  max-width: 1000px;
+  padding: 10px 20px;
+  position: relative;
+  text-align: center;
+  top: 175px;
+  width: 80%;
+}
+
+.container h2,
+.container p {
+  background: #ffffffc7;
+  border-radius: 5px;
+  padding: 5px;
+
+}
+
+.samplesrequest {
+  background: #9783AA8f;
+  border: 2px solid #a8a096;
+  border-radius: 5px;
+  color: white;
+  height: 600px;
+  margin: 20px auto;
+  max-width: 90%;
+  min-width: 750px;
+  text-align: left;
+
+}
+
+.firstname,
+.lastname,
+.email,
+.telephone,
+.radiobutton,
+.dropdown,
+.colorpicker,
+.datepicker,
+.uploadfile,
+.password,
+.website,
+.comments,
+.reset,
+.submit {
+  background: #9783AA00;
+  border: 0;
+}
+
+.firstname,
+.lastname,
+.email,
+.telephone {
+  float: left;
+  width: 30%;
+  margin: 20px auto;
+  max-width: 180px;
+}
+
+.radiobutton {
+  border-top: 1px solid #161717;
+  border-bottom: 1px solid #161717;
+  clear: both;
+  margin: 0 auto;
+  text-align: center;
+  width: 840px;
+}
+
+.radiobutton label {
+  padding-left: 5px;
+  padding-right: 15px;
+}
+
+.dropdown,
+.datepicker {
+  float: left;
+  margin: 0 6px;
+  width: 245px;
+  text-align: center;
+}
+
+.firstname,
+.gc,
+.uploadfile,
+.reset {
+  margin-left: 10px;
+}
+
+.firstname,
+.gc {
+  text-align: left;
+}
+
+.lastname,
+.email {
+  text-align: center;
+}
+
+.telephone,
+.datepicker {
+  text-align: right;
+}
+
+.comments {
+  border-top: 1px solid #161717;
+  clear: both;
+  margin-left: 10px;
+  width: 93%;
+}
+
+.label_input_wrap {
+  display: block;
+}
+
+.reset input,
+.submit input {
+  background: aliceblue;
+  box-shadow: 1px 1px 6px #161717;
+  padding: 5px 20px;
+}
+
+.reset,
+.submit {
+  display: inline;
+  float: right;
+  width: 150px;
+}
+
+.input-section {
+  margin-bottom: 10px;
+}
+
+input {
+    padding: 5px 10px;
+    border-radius: 3px;
+    font-family: 'mr-eaves-xl-modern';
+}
+
+textarea {
+  border-radius: 3px;
+  font-family: 'mr-eaves-xl-modern';
+  padding: 10px;
+  width: 75%;
+  height: 100px;
+}
+
+select {
+    width: 170px;
+    padding: 5px;
+    border-radius: 3px;
+}
+
+label {
+  font-weight: bold;
+}
+
+footer {
+    background: #d7bcb7;
+    position: relative;
+    height: 150px;
+    top: 180px;
+}
+
+footer .small {
+    position: absolute;
+    margin: 34px 50px;
+    background: white;
+    border: 2px solid #a8a096;
+    border-radius: 10px;
+    width: 75px;
+    height: 75px;
+}
+
+.resources,
+.about,
+.other-links {
+  position: relative;
+  float: left;
+  left: 10%;
+  display: block;
+  margin: 15px 50px;
+  padding: 10px 0;
+  padding-left: 95px;
+  border-left: 2px solid #16171778;
+  text-align: center;
+}
+
+.resources a,
+.about a,
+.other-links a {
+    display: block;
+    transition: .2s;
+}
+
+address {
+  line-height: 1.2;
+}
+
+.address {
+    position: relative;
+    text-align: left;
+    margin: 15px 25px;
+    z-index: 999;
+    float: right;
+    border-left: 2px solid #16171778;
+    padding-left: 50px;
+}
+
+address a {
+    color: blanchedalmond;
+}
+
+.nwd {
+    line-height: 1.2;
+    margin: 3px auto;
+}
+/*--
+.birds {
+    border: none;
+    background-image: none;
+    margin: 0 auto;
+    padding: 0;
+}
+
+
+/*----------------------------------
+
+
+      Animations
+
+
+---------------------------------
+
+.bird {
+  background: none;
+  background-image: url(../images/flying-bird-50percent.png);
+  background-size: auto 100%;
+  border: none;
+  width: 88px;
+  height: 125px;
+  object-fit: cover;
+  will-change: background-position;
+
+  animation-name: fly-cycle;
+  animation-timing-function: steps(6);
+  animation-iteration-count: infinite;
+}
+
+
+
+.bird-one {
+  animation-duration: 1s;
+  animation-delay: -0.5s;
+}
+
+.bird-two {
+  animation-duration: .9s;
+  animation-delay: -0.75s;
+}
+
+.bird-three {
+  animation-duration: 1.25s;
+  animation-delay: -0.25s;
+}
+
+.bird-four {
+  animation-duration: 1.1s;
+  animation-delay: -0.55s;
+}
+
+.bird-container {
+  background: none;
+  border: none;
+  position: absolute;
+  top: 10%;
+  left: -10%;
+  transform: scale(0) translateX(-10vw);
+  will-change: transform;
+  height: 88px;
+
+  animation-name: fly-right-one;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+
+}
+
+.bird-container-one {
+    animation-duration: 15s;
+    animation-delay: 0;
+}
+
+.bird-container-two {
+    animation-duration: 16s;
+    animation-delay: 1s;
+}
+
+.bird-container-three {
+    animation-duration: 14.6s;
+    animation-delay: 9.5s;
+}
+
+.bird-container-four {
+    animation-duration: 16s;
+    animation-delay: 10.25s;
+}
+
+@keyframes fly-cycle {
+  100% {
+    background-position: -900px 0;
+  }
+}
+
+@keyframes fly-right-one {
+
+  0% {
+    transform: scale(0.3) translateX(-200vw);
+  }
+
+  10% {
+    transform: translateY(2vh) translateX(0vh) scale(0.4);
+  }
+
+  20% {
+    transform: translateY(0vh) translateX(30vh) scale(0.5);
+  }
+
+  30% {
+    transform: translateY(4vh) translateX(50vh) scale(0.6);
+  }
+
+  40% {
+    transform: translateY(2vh) translateX(70vh) scale(0.6);
+  }
+
+  50% {
+    transform: translateY(0vh) translateX(90vh) scale(0.6);
+  }
+
+  60% {
+    transform: translateY(0vh) translateX(110vh) scale(0.6);
+  }
+
+  100% {
+    transform: translateY(0vh) translateX(110vh) scale(0.6);
+  }
+}
+
+@keyframes fly-right-two {
+
+  0% {
+    transform: translateY(-2vh) translateX(-10vh) scale(0.5);
+  }
+
+  10% {
+    transform: translateY(0vh) translateX(10vh) scale(0.4);
+  }
+
+  20% {
+    transform: translateY(-4vh) translateX(30vh) scale(0.6);
+  }
+
+  30% {
+    transform: translateY(1vh) translateX(50vh) scale(0.45);
+  }
+
+  40% {
+    transform: translateY(-2.5vh) translateX(70vh) scale(0.5);
+  }
+
+  50% {
+    transform: translateY(0vh) translateX(90vh) scale(0.45);
+  }
+
+  51% {
+    transform: translateY(0vh) translateX(110vh) scale(0.45);
+  }
+
+  100% {
+    transform: translateY(0vh) translateX(110vh) scale(0.45);
+  }
+}
