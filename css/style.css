@@ -52,7 +52,7 @@ body {
   font: normal 16px/1.5 'mr-eaves-xl-modern', 'opificio', sans-serif;
 }
 
-div {
+/*--div {
   background: #fffffff2 url(../images/celestial-hands-notext-background.png) repeat fixed center;
   border: 5px solid #a8a096;
   margin: 0 auto;
@@ -60,10 +60,14 @@ div {
   position: relative;
   width: 80%;
 }
-
+--*/
 article {
   background: #ffffffc7;
   border-radius: 5px;
+}
+
+p {
+  overflow: auto;
 }
 
 .large {
@@ -115,7 +119,33 @@ a:hover {
   transition: .2s;
 }
 
+.break1,
+.break-img {
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: contain;
+  clear: both;
+  padding: 600px 0;
+}
 
+.container,
+.form {
+  background: #fffffff2 url(../images/celestial-hands-notext-background.png) repeat fixed center;
+  clear: both;
+  margin: 0 auto;
+  padding: 10px 20px;
+  position: relative;
+  text-align: center;
+}
+
+.container h2,
+.container p,
+.form h2,
+.form p {
+  background: #ffffffc7;
+  border-radius: 5px;
+  padding: 5px;
+}
 
 /*----------------------------------
 
@@ -129,6 +159,7 @@ header {
   background: #d7bcb7;
   padding: 15px 25px;
   position: fixed;
+  top: 0;
   width: 100%;
   z-index: 999;
 }
@@ -175,36 +206,53 @@ nav ul li a{
 
 
 -----------------------------------*/
-.first {
+.first,
+.main,
+.testamonial {
+  background: #151416 url(../images/celestial-hands-notext-background.png) repeat fixed center;
+  clear: both;
+  margin: 0 auto;
   position: relative;
-  top: 130px;
+  top: 110px;
   width: 100%;
 }
 
-.first-article {
-  padding: 5px;
+.home-text {
+  background: #fffffff2 url(../images/celestial-hands-notext-background.png) fixed;
+  border: none;
+  margin: 15px auto;
+  width: 85%;
 }
 
-.main {
+.first-article {
+  min-width: 400px;
+  padding: 5px 25px;
+  overflow: auto;
+}
+
+/*-- .main {
   margin: 0 auto;
   position: relative;
   top: 145px;
   width: 84.5%;
   min-width: 875px;
 }
+--*/
 
 .no-border {
-  border: none;
   background: none;
-  width: 100%;
+  border: none;
   height: 780px;
+  margin: 0 auto;
+  min-width: 728px;
+  overflow: hidden;
   padding: 0;
+  width: 85%;
 }
 
 /*--                      Sidebar -------*/
 .sidebar {
   background: #fffffff2 url(../images/celestial-hands-notext-background.png) repeat fixed center;
-  border: 5px solid #a8a096;
   float: left;
   height: 750px;
   padding: 10px;
@@ -256,9 +304,12 @@ nav ul li a{
 
 
 .business-overview {
-  float: right;
+  background: #fffffff2 url(../images/celestial-hands-notext-background.png) fixed;
+  border: none;
   height: 750px;
-  overflow: scroll;
+  margin-left: 51px;
+  overflow: auto;
+  padding: 10px;
   width: 75%;
 }
 
@@ -282,19 +333,33 @@ nav ul li a{
   padding-left: 115px;
 }
 
-/*-- Testamonials --*/
-.testamonials {
-  top: 160px;
-  position: relative;
-  clear: both;
+/*-- Break Image --*/
+.break1 {
+  background-image: url(../images/beyoutiful.jpeg);
+  background-position: center;
 }
 
+/*-- Testamonials --*/
+.testamonials {
+  background: #151416 url(../images/celestial-hands-notext-background.png) fixed;
+}
+.testamonials article {
+    width: 85%;
+    margin: 10px auto;
+    background: #fffffff2 url(../images/celestial-hands-notext-background.png) fixed;
+}
 .testamonials img {
   display: block;
   margin: 0 auto;
 }
 
 .testamonials div {
+  clear: both;
+  width: 85%;
+  margin: 0 auto;
+  text-align: center;
+  min-width: 728px;
+  overflow: auto;
   clear: both;
 }
 
@@ -313,16 +378,6 @@ nav ul li a{
 
 /*-- Samples Request Form --*/
 
-.container,
-.form {
-  background: #fffffff2 url(../images/celestial-hands-notext-background.png) repeat fixed center;
-  clear: both;
-  margin: 0 auto;
-  padding: 10px 20px;
-  position: relative;
-  text-align: center;
-}
-
 .container {
   border: 5px solid #a8a096;
   max-width: 1000px;
@@ -330,15 +385,6 @@ nav ul li a{
   width: 80%;
 }
 
-.container h2,
-.container p,
-.form h2,
-.form p {
-  background: #ffffffc7;
-  border-radius: 5px;
-  padding: 5px;
-
-}
 
 .samplesrequest,
 .requesthelp {
@@ -349,7 +395,6 @@ nav ul li a{
   min-width: 750px;
   overflow: scroll;
   text-align: left;
-
 }
 
 .samplesrequest {
@@ -788,13 +833,7 @@ address a {
 
 .break-img {
   background-image: url(../images/kelle-robin.jpeg);
-  background-attachment: fixed;
   background-position: bottom;
-  background-repeat: no-repeat;
-  background-size: contain;
-  clear: both;
-  padding: 600px 0;
-
 }
 
 .form {
