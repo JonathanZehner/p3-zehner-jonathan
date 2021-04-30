@@ -61,6 +61,11 @@ div {
   width: 80%;
 }
 
+article {
+  background: #ffffffc7;
+  border-radius: 5px;
+}
+
 .large {
   width: 80%;
   object-fit: contain;
@@ -109,6 +114,8 @@ a:hover {
   font-size: 1.3em;
   transition: .2s;
 }
+
+
 
 /*----------------------------------
 
@@ -174,9 +181,7 @@ nav ul li a{
   width: 100%;
 }
 
-.first article {
-  background: #ffffffc7;
-  border-radius: 5px;
+.first-article {
   padding: 5px;
 }
 
@@ -196,7 +201,8 @@ nav ul li a{
   padding: 0;
 }
 
-aside {
+/*--                      Sidebar -------*/
+.sidebar {
   background: #fffffff2 url(../images/celestial-hands-notext-background.png) repeat fixed center;
   border: 5px solid #a8a096;
   float: left;
@@ -206,7 +212,7 @@ aside {
   width: 15%;
 }
 
-aside img {
+.sidebar img {
   padding: 40px 0 5px;
 }
 
@@ -246,6 +252,8 @@ aside img {
 .robin-nest {
   font: normal 14px/1.5 'amster-4', cursive;
 }
+/*--                     End Sidebar -------*/
+
 
 .business-overview {
   float: right;
@@ -274,6 +282,7 @@ aside img {
   padding-left: 115px;
 }
 
+/*-- Testamonials --*/
 .testamonials {
   top: 160px;
   position: relative;
@@ -300,38 +309,53 @@ aside img {
   border-radius: 5px;
   padding: 5px;
 }
+/*-- End Testamonials --*/
 
-.container {
+/*-- Samples Request Form --*/
+
+.container,
+.form {
   background: #fffffff2 url(../images/celestial-hands-notext-background.png) repeat fixed center;
-  border: 5px solid #a8a096;
+  clear: both;
   margin: 0 auto;
-  max-width: 1000px;
   padding: 10px 20px;
   position: relative;
   text-align: center;
+}
+
+.container {
+  border: 5px solid #a8a096;
+  max-width: 1000px;
   top: 175px;
   width: 80%;
 }
 
 .container h2,
-.container p {
+.container p,
+.form h2,
+.form p {
   background: #ffffffc7;
   border-radius: 5px;
   padding: 5px;
 
 }
 
-.samplesrequest {
-  background: #9783AA8f;
+.samplesrequest,
+.requesthelp {
   border: 2px solid #a8a096;
   border-radius: 5px;
-  color: white;
   height: 600px;
   margin: 20px auto;
-  max-width: 90%;
   min-width: 750px;
+  overflow: scroll;
   text-align: left;
 
+}
+
+.samplesrequest {
+  background: #9783AA8f;
+  color: white;
+  max-width: 90%;
 }
 
 .firstname,
@@ -458,12 +482,13 @@ select {
 label {
   font-weight: bold;
 }
+/*-- End Form --*/
 
+/*-- Footer --*/
 footer {
     background: #d7bcb7;
     position: relative;
     height: 150px;
-    top: 180px;
 }
 
 footer .small {
@@ -683,4 +708,106 @@ address a {
   100% {
     transform: translateY(0vh) translateX(110vh) scale(0.45);
   }
+}
+
+/*----------------------------------
+
+
+      About Page Styling
+
+
+-----------------------------------*/
+.about-robins-nest {
+  background: #151416;
+  position: relative;
+}
+
+.robin {
+  background: #9783aa url(../images/celestial-hands-notext-background.png) repeat fixed center;
+  border-bottom: 5px solid #a8a096;
+  border-top: 5px solid #a8a096;
+  min-width: 882px;
+  overflow: scroll;
+  position: relative;
+  top: 115px;
+
+
+}
+
+.first-text {
+  background-color: transparent;
+  background-image: none;
+  border: none;
+  float: left;
+  height: 750px;
+  left: 5%;
+  width: 70%;
+}
+
+.robin img {
+  height: 500px;
+  min-width: 150px;
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+}
+
+.robin-about {
+    margin: 25px auto;
+    padding: 25px;
+}
+
+
+
+.mission-aside {
+  background: transparent;
+  float: left;
+  height: 750px;
+  margin-left: 70px;
+  padding: 10px;
+
+  text-align: center;
+  width: 15%;
+
+
+}
+
+.mission-aside img {
+  max-height: 200px;
+  width: 100%;
+  object-fit: contain;
+}
+
+.mission {
+  background: #ffffffc7;
+  border-radius: 5px;
+  max-height: 550px;
+  min-width: 150px;
+  overflow-y: scroll;
+}
+
+.break-img {
+  background-image: url(../images/kelle-robin.jpeg);
+  background-attachment: fixed;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
+  clear: both;
+  padding: 600px 0;
+
+}
+
+.form {
+  background-color: #9783AA;
+  border-bottom: 5px solid #a8a096;
+  border-top: 5px solid #a8a096;
+  width: 100%;
+}
+
+.requesthelp {
+  background: #ffffffc7;
+  color: #151416;
+  max-width: 65%;
+
+
 }

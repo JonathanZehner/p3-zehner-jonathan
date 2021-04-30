@@ -72,37 +72,40 @@
 <!-- end Nav Bar -->
 
 <!--- Main Body ---------------->
-    <main>
-      <section class="first">
+    <main class="about-robins-nest">
+      <section class="first robin">
         <div class="first-text">
-          <img src="images/robin-grayscale.jpeg" class="align-center large" alt="Hero Image of Robin Brown-victim of domestic violence" title="Robin Brown - Victim of Domestic Violence 28 October 2015">
+          <img src="images/robin-grayscale.jpeg" class="align-center large robin-img" alt="Hero Image of Robin Brown-victim of domestic violence" title="Robin Brown - Victim of Domestic Violence 28 October 2015">
 
-          <article>
+          <article class="robin-about">
             <h2>Head</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
           </article>
         </div>
-      </section>
 
-      <section class="aside">
         <div class="no-border">
-          <aside class="sidebar">
-            <section class="about">
-              <img src="images/portrait-about.jpeg" class="about-portrait" alt="image of flyCOLLECTIVE owner" title="Kelle A. Zehner - owner of flyCOLLECTIVE">
+          <aside>
+            <section class="mission-aside">
+              <img src="images/portrait-about.jpeg" class="about-portrait medium" alt="image of flyCOLLECTIVE owner" title="Kelle A. Zehner - owner of flyCOLLECTIVE">
 
-              <h2>My Mission</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              <article class="mission">
+                <h2>My Mission</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              </article>
             </section>
           </aside>
+        </div>
+      </section>
+
+      <section class="break-img"></section>
 
 
 <!-- Samples Request Form -->
-      <section>
-        <div class="container">
+      <section class="form">
           <h2>Samples Request Form</h2>
-          <p>Please fill out the form below and I will be in touch!</p>
+          <p>If you or someone you know has been impacted by domestic violence, please fill out the form below and I will be in touch!</p>
 
-          <form class="samplesrequest" id="test_form" name="test_form" method="post" action="form.php" onsubmit="return validateForm(this)">
+          <form class="requesthelp" id="test_form" name="test_form" method="post" action="form.php" onsubmit="return validateForm(this)">
 
             <div class="firstname input-section">
               <label for="firstname" class="label_input_wrap">First Name</label>
@@ -124,39 +127,6 @@
               <input type="tel" name="telephone" id="telephone" placeholder="123-456-7890" />
             </div>
 
-            <div class="radiobutton input-section">
-              <h3>Product Line:</h3>
-              <input type="radio" name="product-line" value="green-compass" id="green-compass" /><label for="green-compass">Green Compass Global</label>
-              <input type="radio" name="product-line" value="rf" id="rf" /><label for="rf">Rodan + Fields</label>
-              <input type="radio" name="product-line" value="colorstreet" id="colorstreet" /><label for="colorstreet">ColorStreet</label>
-            </div>
-
-            <div class="dropdown input-section gc">
-              <label for="gcg" class="label_input_wrap">CBD Product Samples</label>
-              <select name="gcg" id="gcg">
-                <option value="CBD">CBD Drops</option>
-                <option value="gummies" selected>CBD Gummies</option>
-                <option value="cream">Pain Cream</option>
-                <option value="lotion">Sooth Lotion</option>
-              </select>
-            </div>
-
-            <div class="dropdown input-section">
-              <label for="rf" class="label_input_wrap">Premium Skin Care Samples</label>
-              <select name="rf" id="rf">
-                <option value="sooth">Body Cream</option>
-                <option value="redefine" selected>Mini Facial</option>
-                <option value="cream">Eye Cream</option>
-                <option value="lotion">Microderm Abrasion Paste</option>
-                <option value="lotion">Skin Clearing Foundation</option>
-              </select>
-            </div>
-
-            <div class="datepicker input-section">
-              <label for="birthday" class="label_input_wrap">When is Your Birthday?</label>
-              <input type="date" name="birthday" id="birthday" value="#" />
-            </div>
-
             <div class="comments input-section">
               <label for="comments" class="label_input_wrap">Comments:</label>
               <textarea name="comments" id="comments" placeholder="Please let me know what your needs are and feel free to upload a picture to help me determine your skincare needs..."></textarea>
@@ -175,7 +145,6 @@
               <input type="submit" value="Send me a message!"/>
             </div>
           </form>
-        </div>
       </section>
 <!-- Samples Request Form end -->
     </main>
