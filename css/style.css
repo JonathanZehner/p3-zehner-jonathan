@@ -273,17 +273,15 @@ nav ul li a{
 }
 
 .sidebar img {
-  padding: 40px 0 5px;
+    box-shadow: 2px 2px 5px #151416;
+    display: block;
+    margin: 33px auto 10px;
 }
 
 .sidebar .logo {
+  box-shadow: none;
   padding: 25px 0;
   width: 100%;
-}
-
-.sidebar img {
-  display: block;
-  margin: 0 auto;
 }
 
 .sidebar-links {
@@ -338,8 +336,9 @@ nav ul li a{
 }
 
 .overview .small {
+  box-shadow: 2px 2px 5px #151416;
   float: left;
-  padding: 10px 15px;
+  margin: 15px 15px;
 }
 
 .overview h2 {
@@ -349,6 +348,12 @@ nav ul li a{
 .overview p {
   padding: 10px;
 }
+
+.height {
+  height: 80px;
+  margin-bottom: 25px;
+}
+
 
 .quote {
   text-align: right;
@@ -370,40 +375,83 @@ nav ul li a{
 }
 
 /*-- Testamonials --*/
+
 .testamonials {
-  background: #151416 url(../images/celestial-hands-notext-background.png) fixed;
-}
-.testamonials article {
-    width: 85%;
-    margin: 10px auto;
-    background: #fffffff2 url(../images/celestial-hands-notext-background.png) fixed;
-}
-.testamonials img {
-  display: block;
-  margin: 0 auto;
+    background: transparent;
+    height: 375px;
+    text-align: center;
+    padding: 100px;
+    margin: 50px;
 }
 
-.testamonials div {
-  clear: both;
-  width: 85%;
-  margin: 0 auto;
-  text-align: center;
-  min-width: 728px;
-  overflow: auto;
-  clear: both;
+/*-- Flip-Card Styling --*/
+
+.flip-card {
+    display: inline-block;
+    height: 350px;
+    margin: 30px;
+    padding: 16px 0;
+    width: 280px;
+    background: transparent;
 }
 
-.testamonial-2 {
-  margin: 15px auto;
+.flip-card h5 {
+    background-color: #ffffffc7;
+    font: bold 24pt/1.25em 'optibank-gothic', 'opificio', sans-serif;
+    height: 80px;
 }
 
-.description,
-.quote {
-  border: none;
-  background: #ffffffc7;
-  border-radius: 5px;
-  padding: 5px;
+.flip-card img {
+    width: 100%;
+    object-fit: contain;
 }
+
+.flip-card-inner {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    transition: transform .6s;
+    transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+      background: #ffffffc7 url(../images/celestial-hands-notext-background.png) fixed;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+}
+
+.flip-card-back {
+    background: #ffffffc7 url(../images/celestial-hands-notext-background.png) fixed;
+    transform: rotateY(180deg);
+}
+
+.flip-card-back img {
+    padding: 50px 0;
+}
+
+.flip-card-back a {
+    color: #e7b7f3;
+    text-decoration: none;
+    margin: 15px;
+    display: inline-block;
+    transition: .2s;
+}
+
+.flip-card-back a:hover {
+    color: #b1ece4;
+    transition: .2s;
+    font-size: 1.2em;
+}
+
 /*-- End Testamonials --*/
 
 /*-- Break Image --*/
