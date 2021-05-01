@@ -1060,7 +1060,7 @@ address a {
 /*----------------------------------
 
 
-      Products Page Styling
+      Health Page Styling
 
 
 -----------------------------------*/
@@ -1103,6 +1103,10 @@ address a {
     position: relative;
     top: 200px;
     width: 80%;
+}
+
+.yoga-info h2 {
+  text-align: center;
 }
 
 .yoga-tips {
