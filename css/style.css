@@ -557,6 +557,7 @@ label {
 /*-- Footer --*/
 footer {
     background: #d7bcb7;
+    clear: both;
     position: relative;
     height: 150px;
 }
@@ -870,7 +871,7 @@ address a {
 /*----------------------------------
 
 
-      Home Page Styling
+      Products Page Styling
 
 
 -----------------------------------*/
@@ -947,4 +948,60 @@ address a {
   height: 250px;
   width: 250px;
   object-fit: cover;
+}
+
+/*----------------------------------
+
+
+      Products Page Styling
+
+
+-----------------------------------*/
+
+.yoga-hero {
+    background: #fffffff2 url(../images/celestial-hands-notext-background.png) fixed;
+    margin: 0 auto;
+    position: relative;
+    top: 125px;
+    width: 95%;
+}
+
+.yoga-hero .large {
+
+    height: 500px;
+}
+
+.yoga-art {
+    /* float: left; */
+    width: 50%;
+    /* z-index: 99; */
+    position: absolute;
+    left: 60%;
+    top: 0;
+    height: 100%;
+}
+
+.yoga-info {
+    clear: both;
+    top: 500px;
+    position: relative;
+}
+
+.yoga-tips {
+    clear: both;
+    position: relative;
+    top: 500px;
+}
+
+.today-tip {
+  float: left;
+}
+
+.today-tip:nth-child(even) {
+  clear: right;
+
+}
+
+.yoga-foot {
+  top: 500px;
 }
