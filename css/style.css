@@ -252,7 +252,6 @@ nav ul li a{
 
 .no-border {
   background: none;
-  border: none;
   height: 780px;
   margin: 0 auto;
   min-width: 728px;
@@ -264,10 +263,10 @@ nav ul li a{
 /*--                      Sidebar -------*/
 .sidebar {
   background: #fffffff2 url(../images/celestial-hands-notext-background.png) repeat fixed center;
-  float: left;
   height: 750px;
   margin-left: 10%;
   padding: 10px;
+  position: absolute;
   text-align: center;
   width: 15%;
 }
@@ -315,17 +314,12 @@ nav ul li a{
 
 .business-overview {
     background: #fffffff2 url(../images/celestial-hands-notext-background.png) fixed;
-    border: none;
-    float: left;
     height: 750px;
-    margin: 0 auto;
-    overflow: auto;
+    margin-left: 24.5%;
+    overflow-y: auto;
     padding: 10px;
+    position: absolute;
     width: 600px;
-    /* position: absolute; */
-    /* right: 7.5%; */
-    /* object-fit: contain; */
-    /* object-position: right; */
 }
 
 .overview {
@@ -364,10 +358,10 @@ nav ul li a{
   text-align: center;
 }
 
-.kaz {
+/*--.kaz {
   padding-left: 115px;
 }
-
+--*/
 /*-- Break Image --*/
 .break1 {
   background-image: url(../images/beyoutiful.jpeg);
@@ -421,7 +415,7 @@ nav ul li a{
 
 .flip-card-front,
 .flip-card-back {
-      background: #ffffffc7 url(../images/celestial-hands-notext-background.png) fixed;
+    background: #ffffffc7 url(../images/celestial-hands-notext-background.png) fixed;
     position: absolute;
     width: 100%;
     height: 100%;
@@ -749,7 +743,7 @@ address a {
 
 .bird-container-one {
     animation-duration: 15s;
-    animation-delay: 0;
+    animation-delay: .5s;
 }
 
 .bird-container-two {
