@@ -52,6 +52,10 @@ body {
   font: normal 16px/1.5 'mr-eaves-xl-modern', 'opificio', sans-serif;
 }
 
+main {
+  background: #151416 url(../images/celestial-hands-notext-background.png) repeat fixed center;
+}
+
 /*--div {
   background: #fffffff2 url(../images/celestial-hands-notext-background.png) repeat fixed center;
   border: 5px solid #a8a096;
@@ -125,6 +129,8 @@ a:hover {
 
 .break1,
 .break2,
+.break-top,
+.break-bottom,
 .break-img {
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -859,6 +865,86 @@ address a {
   background: #ffffffc7;
   color: #151416;
   max-width: 65%;
+}
+
+/*----------------------------------
 
 
+      Home Page Styling
+
+
+-----------------------------------*/
+.hero-top {
+    margin: 0 auto;
+    top: 115px;
+    position: relative;
+    text-align: center;
+}
+
+.hero-three {
+  background: #fffffff2 url(../images/celestial-hands-notext-background.png) fixed;
+  margin: 0 auto;
+  max-width: 1280px;
+  min-width: 500px;
+  overflow: auto;
+  width: 80%;
+}
+
+.hero-three img {
+  padding: 25px;
+}
+
+.break-bottom {
+  background-image: url(../images/dv-awareness.jpeg);
+  background-position: bottom;
+  background-size: cover;
+  margin: 150px auto;
+}
+
+.product-lines {
+  background: #fffffff2 url(../images/celestial-hands-notext-background.png) fixed;
+  margin: 0 auto;
+  position: relative;
+  text-align: center;
+  top: 125px;
+  width: 80%;
+  height: 750px;
+}
+
+.products {
+  float: left;
+  background: #fffffff2 url(../images/celestial-hands-notext-background.png) fixed;
+}
+
+.products img {
+  height: 150px;
+  object-fit: cover;
+  padding: 25px;
+  width: 150px;
+}
+
+.products img:nth-child(1){
+  margin-left: 64px;
+}
+
+.products img:nth-child(3){
+  clear: right;
+  margin-right: 50px;
+}
+
+.collage {
+  height: 500px;
+  margin: 0 auto;
+  position: relative;
+  width: 94.25%;
+}
+
+.collage-img {
+    float: left;
+}
+
+.collage img {
+  height: 250px;
+  width: 250px;
+  object-fit: cover;
 }
