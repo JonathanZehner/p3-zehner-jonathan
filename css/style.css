@@ -238,6 +238,18 @@ nav ul li a{
   text-align: center;
 }
 
+.f {
+  color: #9783aa;
+  font: bold 48pt 'amster-1';
+  text-transform: lowercase;
+}
+
+.c {
+  font: 36pt 'mr-eaves-xl-modern';
+  font-weight: lighter;
+  text-transform: uppercase;
+}
+
 .no-border {
   background: none;
   border: none;
@@ -330,8 +342,21 @@ nav ul li a{
   padding: 10px 15px;
 }
 
+.overview h2 {
+  text-align: center;
+}
+
 .overview p {
   padding: 10px;
+}
+
+.quote {
+  text-align: right;
+}
+
+.meister {
+  font: 24pt 'mr-dehaviland-reg';
+  text-align: center;
 }
 
 .kaz {
